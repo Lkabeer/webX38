@@ -1,0 +1,63 @@
+@font-face {
+  font-family: fontX;
+  src: url("../assets/KaushanScriptX.ttf"); }
+
+* {
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: fontX;
+  height: 100vh;
+  text-align: center; }
+
+img {
+  margin: 20px;
+  max-width: 100%; }
+
+h2 {
+  font-size: 2em; }
+
+.flexCenterX, .pageCenterX, nav, .titleX, .sectionX {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+nav {
+  background-color: #9e0d0d; }
+  nav a {
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none; }
+    nav a:hover {
+      color: #000;
+      font-size: 1.5em; }
+  nav#shrinkNavX a.shrinkX {
+    padding: 0;
+    font-size: 1em; }
+    nav#shrinkNavX a.shrinkX:last-child {
+      display: none; }
+
+.navX {
+  background-color: transparent; }
+  .navX a:hover {
+    color: #9e0d0d; }
+
+.sectionX {
+  color: #9e0d0d;
+  height: 100vh; }
+
+.stickyX {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 7; }

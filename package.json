@@ -1,0 +1,19 @@
+{
+  "name": "gulpx",
+  "version": "1.0.0",
+  "description": "NavX ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NavX"
+  ],
+  "author": "X-Team",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^3.2.1"
+  },
+  "dependencies": {}
+}
