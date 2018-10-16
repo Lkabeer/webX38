@@ -23,15 +23,6 @@ body {
     text-align: center;
 }
 
-img {
-    margin: 20px;
-    max-width: 100%;
-}
-
-h2 {
-    font-size: 2em;
-}
-
 .flexCenterX {
     display: flex;
     justify-content: center;
@@ -42,64 +33,51 @@ h2 {
     @extend .flexCenterX;
 }
 
-nav {
-    @extend .flexCenterX;
+.gear{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 30px auto;
+    animation: spin 4s linear infinite;
+  }
+  
+  .center{
+    position: absolute;
+    top: 20px;
+    left: 20px;
 
-    background-color: #9e0d0d;
+    width: 60px;
+    height: 60px;
+    z-index: 3;
+    background: #000;
+    border-radius: 50%;
+  }
 
-    // // stickyNavX without JavaScript X-Team
-    // &#stickyNavX, &#hideNavX{
-    //     position: -webkit-sticky; /* Safari */
-    //     position: sticky;
-    //     top: 0;
-    //     z-index: 7;
-    // }
-
-    a {
-        padding: 5px;
-        margin: 10px;
-        font-size: 1.2em;
-        color: #fff;
-        text-decoration: none;
-
-        &:hover {
-            color: #000;
-            font-size: 1.5em;
-        }
+  .tooth{
+    position: absolute;
+    top: -10px;
+    left: 40px;
+    width: 20px;
+    height: 120px;
+    background:#fff;
+  }
+  
+  .tooth:nth-child(2){
+    transform: rotate(45deg);
+  }
+  
+  .tooth:nth-child(3){
+    transform: rotate(90deg);
+  }
+  
+  .tooth:nth-child(4){
+    transform: rotate(135deg);
+  }
+  
+  @keyframes spin {
+    to {
+        transform: rotate(360deg);
     }
-
-    &#shrinkNavX a.shrinkX {
-        padding: 0;
-        font-size: 1em;
-
-        &:last-child {
-            display: none;
-        }
-    }
-}
-
-.navX {
-    background-color: transparent;
-
-    a:hover {
-        color: #9e0d0d;
-    }
-}
-
-.titleX {
-    @extend .flexCenterX;
-}
-
-.sectionX {
-    @extend .flexCenterX;
-
-    color: #9e0d0d;
-    height: 100vh;
-}
-
-.stickyX {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 7;
-}
+  }
